@@ -1,0 +1,78 @@
+.Card {
+    border-width: medium;
+    border: 1px solid white;
+}
+
+.cardTitle {
+    border-bottom: 1px solid #ffffff;
+}
+
+.cardTitle-overlay {
+    background: rgba(81, 81, 81, 0.3);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #ffffff;
+    height: 60px;
+}
+
+.price {
+    height: 120px;
+    margin: 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.card-lazur .price, 
+.card-lazur .cardTitle {
+    background-color: rgb(95, 206, 225);
+} 
+
+.card-green .price, 
+.card-green .cardTitle {
+    background-color: rgb(47, 175, 92);
+} 
+
+.card-red .price, 
+.card-red .cardTitle {
+    background-color: rgb(219, 76, 69);
+} 
+
+.card-black .price, 
+.card-black .cardTitle {
+    background-color: rgb(48, 47, 47);
+} 
+
+.price-value {
+    font-size: 3.5em; 
+}
+
+.speed {
+    margin: 0;
+    padding: 25px 10px;
+    border-bottom: 1px solid #ffffff; 
+    background-color:rgb(249, 245, 245);
+    font-size: 14px;
+    color: rgb(128, 128, 128);
+}
+
+.remark {
+    margin: 0;
+    padding: 5px 10px;
+    background-color:rgb(231, 229, 229);
+    color: rgb(128, 128, 128);
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.selected {
+    transform: scale(1.05);
+}
