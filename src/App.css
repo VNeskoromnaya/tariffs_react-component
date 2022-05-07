@@ -15,6 +15,22 @@
   justify-content: space-around;
 }
 
+.Card:nth-child(1) {
+  background-color: rgb(95, 206, 225);
+}
+
+.Card:nth-child(2) {
+  background-color: rgb(47, 175, 92);
+}
+
+.Card:nth-child(3) {
+  background-color: rgb(219, 76, 69);
+}
+
+.Card:nth-child(4) {
+  background-color: rgb(48, 47, 47);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
