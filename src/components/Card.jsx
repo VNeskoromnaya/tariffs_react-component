@@ -22,7 +22,3 @@ function Card(props) {
 }
 
 export default Card;
-
-
-{/* <div className={"Card card-" + props.color + ' ' + (props.isSelected ? "selected" : "")}> */}
-    {/* вариает записи, если использую цвет карточки как класс через сss внутри самого компонента*/}
