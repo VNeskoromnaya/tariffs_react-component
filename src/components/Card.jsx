@@ -1,24 +1,26 @@
+import React from 'react';
 import './Card.css';
 
 
 const remark = 'Объем включенного трафика не ограничен';
 
 
-function Card(props) {
+export default function Card({title, price, speed, isSelected, onClick, ...props}) {
 
     return (
-    <div className={"Card " + (props.isSelected ? "selected" : "")}> 
-    
+    // <div className={"Card " + (props.isSelected ? "selected" : "")}> 
+    <div className={`Card ${isSelected ? "selected" : ""}`} onClick={() => onClick(props.index)}>
+        {/* <div className="Card"> */}
         <div className="cardTitle">
-           <h2 className="cardTitle-overlay">{props.title}</h2>
+           <h2 className="cardTitle-overlay">{title}</h2>
         </div>
         <p className="price">грн <br/><br/><br/>
-        <span className="price-value">{props.price}</span> <br/><br/>/мес 
+        <span className="price-value">{price}</span> <br/><br/>/мес 
         </p>
-        <p className="speed">до {props.speed} Мбит/сек</p>
+        <p className="speed">до {speed} Мбит/сек</p>
         <p className="remark">{remark}</p> 
     </div>
     );
 }
 
-export default Card;
+// 
