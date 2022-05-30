@@ -12,7 +12,6 @@ export default function Card({title, price, speed, isSelected, onClick, ...props
     }    
 
     return (
-    // <div className={"Card " + (props.isSelected ? "selected" : "")}> 
     <div className={`Card ${isSelected ? "selected" : ""}`} onClick={handleClick}>
         {/* <div className="Card"> */}
         <div className="cardTitle">
@@ -26,5 +25,3 @@ export default function Card({title, price, speed, isSelected, onClick, ...props
     </div>
     );
 }
-
-// () => onClick(props.index)
