@@ -13,11 +13,22 @@ const cards = [
 
 function App() {
 
+  const [price, setPrice] = useState();
+
+  const handleClick = (newPrice) => {
+    if (newPrice === price) {
+      return setPrice(null);
+    }
+    return setPrice(newPrice);
+  }
+
+  /*
   const [isSelected, setIsSelected] = useState();
 
   const handleClick = (isSelected) => {
     setIsSelected(isSelected); 
   }
+  */
 
   return (
     <div className="App">
@@ -26,7 +37,7 @@ function App() {
       
       {
           cards.map((card, index) =>
-          <Card key={index} index={index} title={card.title} price={card.price} speed={card.speed} isSelected={index === isSelected} onClick={handleClick}></Card>
+          <Card key={index} index={index} title={card.title} price={card.price} speed={card.speed} isSelected={index === price} onClick={handleClick}></Card>
           )
         }
       {/* {

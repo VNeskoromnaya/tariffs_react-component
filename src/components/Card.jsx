@@ -7,9 +7,13 @@ const remark = 'Объем включенного трафика не огран
 
 export default function Card({title, price, speed, isSelected, onClick, ...props}) {
 
+    const handleClick = () => {
+        onClick(props.index);
+    }    
+
     return (
     // <div className={"Card " + (props.isSelected ? "selected" : "")}> 
-    <div className={`Card ${isSelected ? "selected" : ""}`} onClick={() => onClick(props.index)}>
+    <div className={`Card ${isSelected ? "selected" : ""}`} onClick={handleClick}>
         {/* <div className="Card"> */}
         <div className="cardTitle">
            <h2 className="cardTitle-overlay">{title}</h2>
@@ -23,4 +27,4 @@ export default function Card({title, price, speed, isSelected, onClick, ...props
     );
 }
 
-// 
+// () => onClick(props.index)
