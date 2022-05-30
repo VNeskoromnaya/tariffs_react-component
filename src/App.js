@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './App.css';
 import Card from './components/Card';
-// import Test from './components/Test';
 
 
 const cards = [
@@ -22,14 +21,6 @@ function App() {
     return setPrice(newPrice);
   }
 
-  /*
-  const [isSelected, setIsSelected] = useState();
-
-  const handleClick = (isSelected) => {
-    setIsSelected(isSelected); 
-  }
-  */
-
   return (
     <div className="App">
 
@@ -40,11 +31,6 @@ function App() {
           <Card key={index} index={index} title={card.title} price={card.price} speed={card.speed} isSelected={index === price} onClick={handleClick}></Card>
           )
         }
-      {/* {
-          cards.map((card, index) =>
-          <Card key={index} index={index} title={card.title} price={card.price} speed={card.speed} isSelected={card.isSelected}></Card>
-          )
-        } */}
       </div>
     </div>
   );
